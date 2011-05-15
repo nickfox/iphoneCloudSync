@@ -1,0 +1,99 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.95em;
+}
+
+.hover {
+  	background-color:#ccc;
+}
+ 
+ul {
+	width:200px;
+	list-style-type:square;
+}
+
+.formDescription {
+	text-align:right;
+}
+
+.buttons {
+	font-size: 0.75em;
+	width:150px;	
+}
+
+input {
+	font-size: 0.95em;
+	width:250px;	
+}
+
+/* dont' change the order of these next to, has to come after the input above */
+#productImage {
+	width:295px;	
+}
+
+.packageimages {
+	width:295px;	
+}
+
+select {
+	font-size: 0.85em;
+	width:250px;	
+}
+
+table.formTable {
+	border-width: 1px;
+	border-spacing: 1px;
+	border-style: outset;
+	border-color: #fff;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+table.formTable td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: #fff;
+	-moz-border-radius: ;
+}
+
+.formTextArea {
+        width: 600px;
+        height: 120px;
+        border: 1px solid #000;
+        padding: 5px;
+        font-family: arial, helvetica, sans-serif;
+		font-size: 0.95em;
+}
+
+table.productTable {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: #000;
+	border-collapse: collapse;
+	background-color: #fff;
+}
+table.productTable th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: #000;
+	background-color: #ccc;
+	-moz-border-radius: ;
+}
+table.productTable td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: #000;
+	-moz-border-radius: ;
+}
+/* tool tip */
+
+#text {margin:50px auto; width:500px}
+.hotspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+
+#tt {position:absolute; display:block;}
+#tttop {display:block; height:5px; margin-left:5px;overflow:hidden}
+#ttcont {display:block; padding:2px 12px 3px 7px;margin-left:5px; background:#666; color:#FFF}
+#ttbot {display:block; height:5px; margin-left:5px;overflow:hidden}

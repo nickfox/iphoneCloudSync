@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Catalog</title>
+  	<script src="/_utils/script/jquery.js"></script>
+  	<script src="/_utils/script/jquery.couch.js"></script>
+  	<script src="./script.js"></script>
+	<script src="./tooltip.js"></script>
+	<link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+	<table class="productTable">
+	<tr><th width="150">Product</th><th width="650">Details</th></tr>
+	<tr>
+		<td><div style="overflow:auto;height:300px;overflow-x: hidden;"><ul id="productData" style="margin: 0px 5px 0px -20px;" ></ul></div></td>
+		
+		<td><form name="itemForm">
+	            <input type="hidden" name="productID" id="productID" />
+	            <input type="hidden" name="productRev" id="productRev"/>
+				<div id="formDiv">
+				<table class="formTable" border=0>
+				<tr><td width="75" class="formDescription"><label for="name">Name:</label></td><td width="575"><input type="text" name="name" id="productName" /></td></tr>
+					
+				<tr><td width="75" class="formDescription"><label for="productDescription">Description:</label></td><td width="575"><textarea name="productDescription" id="productDescription" class="formTextArea" ></textarea>
+					</td></tr>
+				<tr><td width="75" class="formDescription"><label for="productImage">Image:</label></td><td width="575"><input type="text" name="productImage" id="productImage" /></td></tr>					
+				<tr><td width="650" colspan="2"><span id="messages" style="color:#f00;">&nbsp;</font></td></tr>
+						
+				<tr><td width="650" colspan=2 class="formDescription"><input type="button" class="buttons" id="createButton" value="Create New Product" onmouseover="tooltip.show('Click the <strong>Clear Fields</strong> button and then add new product <strong>before</strong> clicking this button.');" onmouseout="tooltip.hide();"/>	
+				<input type="button" class="buttons" id="updateButton" value="Update Product" />	
+	            <input type="button" class="buttons" id="clearButton" value="Clear Fields" />
+	            <input type="button" class="buttons" id="deleteButton" value="Delete Product" /></tr>																					
+				</table>
+				</div>
+	    </form></td>
+	
+	</tr>	
+	</table>       
+  </body>
+</html>

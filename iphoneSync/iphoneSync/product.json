@@ -1,0 +1,45 @@
+{
+    "total_rows": 3,
+    "offset": 0,
+    "rows": [
+        {
+            "id": "04b441a33e4c62623052d7813e4a5f0b",
+            "key": [
+                "Bananas"
+            ],
+            "value": {
+                "_id": "04b441a33e4c62623052d7813e4a5f0b",
+                "_rev": "2-fbf86ffd962c1a818cff3e6fa3fc494a",
+                "name": "Bananas",
+                "description": "Tastes good with raisin bran.",
+                "image": "bananas.png"
+            }
+        },
+        {
+            "id": "5f2aabc2b766ab9bc6902018444e77e5",
+            "key": [
+                "Coke"
+            ],
+            "value": {
+                "_id": "5f2aabc2b766ab9bc6902018444e77e5",
+                "_rev": "1-67392ced5e525510b518a5445fd76907",
+                "name": "Coke",
+                "description": "My favorite drink.",
+                "image": "coke.png"
+            }
+        },
+        {
+            "id": "5f2aabc2b766ab9bc69020184490eaaf",
+            "key": [
+                "Oranges"
+            ],
+            "value": {
+                "_id": "5f2aabc2b766ab9bc69020184490eaaf",
+                "_rev": "1-af05bbdf2179e6d15e8c98c9221075b9",
+                "name": "Oranges",
+                "description": "They are very orange.",
+                "image": "oranges.png"
+            }
+        }
+    ]
+}
