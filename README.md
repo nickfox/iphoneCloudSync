@@ -33,5 +33,5 @@ Run the app again. This will clear out any stale values that might be left in th
 
     - (void)applicationDidBecomeActive:(UIApplication *)application 
 
-That's it for this app. I'll be creating a tutorial soon explaining how the app works. In the future, I will try to build another app that stores images directly in the couchDB, that would be a cleaner and a less error prone way of building the app but foe now this does show how to do syncing on two different platforms for different data types.
+That's it for this app. I'll be creating a tutorial soon explaining how the app works. In the future, I will try to build another app that stores images directly in the couchDB, that would be a cleaner and a less error prone way of building the app but for now this does show how to do syncing on two different platforms for different data types.
 
