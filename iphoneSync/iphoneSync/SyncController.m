@@ -163,7 +163,7 @@
     __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:couchUrl]];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    jsonDocumentsFilePath = [documentsDirectory stringByAppendingPathComponent:@"product.json"];
+    NSString *jsonDocumentsFilePath = [documentsDirectory stringByAppendingPathComponent:@"product.json"];
     
     //NSLog(@"destPath: %@", jsonDocumentsFilePath);
     [request setDownloadDestinationPath:jsonDocumentsFilePath];

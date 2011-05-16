@@ -16,7 +16,6 @@
     NSMutableArray *localSyncFileList;    
     NSMutableArray *localFilesNeedingToBeAdded;
     NSMutableArray *localFilesNeedingToBeDeleted;
-    NSString *jsonDocumentsFilePath;
     NSMutableString *couchDBUrl;
 }
 
