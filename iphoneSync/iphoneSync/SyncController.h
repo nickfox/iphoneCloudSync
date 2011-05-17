@@ -25,7 +25,6 @@
 @property (nonatomic, retain) NSMutableArray *localFilesNeedingToBeAdded;
 @property (nonatomic, retain) NSMutableArray *localFilesNeedingToBeDeleted;
 
-- (void)buildCouchDBUrl:(NSString *)couchDBUserName andPassword:(NSString *) couchDBPassword;
 - (void)getLocalFileList;
 - (void)syncLocalFilesWithDropbox;
 - (void)createSyncFolderIfDoesntExist;

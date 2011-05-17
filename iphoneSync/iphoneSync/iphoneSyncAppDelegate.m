@@ -29,7 +29,6 @@
     self.window.rootViewController = self.navigationController;
     
     self.syncController = [[SyncController alloc] init];
-    //[self.syncController addObserver:[[self.navigationController viewControllers] objectAtIndex:0] forKeyPath:@"couchDBChanged" options:NSKeyValueObservingOptionNew context:NULL];
     
     [self.window makeKeyAndVisible];
     return YES;

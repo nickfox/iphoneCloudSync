@@ -29,21 +29,12 @@
         NSString *couchDBUserName = @"COUCHDB_USERNAME";
         NSString *couchDBPassword = @"COUCHDB_PASSWORD";
         
-        [self buildCouchDBUrl:couchDBUserName andPassword:couchDBPassword];        
+        couchDBUrl = [NSString stringWithFormat:@"http://%@:%@@%@.cloudant.com/iphonecouchsync", couchDBUserName, couchDBPassword, couchDBUserName];
+        
+        // NSLog(@"couchDBUrl: %@", couchDBUrl);
         [self createSyncFolderIfDoesntExist];
     }
     return self;
-}
-
-- (void)buildCouchDBUrl:(NSString *)couchDBUserName andPassword:(NSString *) couchDBPassword {
-    couchDBUrl = [[NSMutableString alloc] initWithString:@"http://"];
-    [couchDBUrl appendString:couchDBUserName];
-    [couchDBUrl appendString:@":"];
-    [couchDBUrl appendString:couchDBPassword];
-    [couchDBUrl appendString:@"@"];
-    [couchDBUrl appendString:couchDBUserName];
-    [couchDBUrl appendString:@".cloudant.com/iphonecouchsync/"];
-    NSLog(@"couchDBUrl: %@", couchDBUrl);
 }
 
 #pragma mark -

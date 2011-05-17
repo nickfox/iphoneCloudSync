@@ -64,7 +64,6 @@
 #pragma mark - Table view data source
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath {    
-    //UIFont *cellFont = [UIFont systemFontOfSize:[UIFont systemFontSize]];
     UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:17.0];
     
     NSString *cellText = self.product.description;    
